@@ -1,0 +1,699 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primarry-Vnc: #0e883d;
+  --Dust-Red-4: #ff7875;
+  --Neutral-9: #434343;
+  --black-80-base: #2e3032;
+  --Neutral-7: #8c8c8c;
+  --Neutral-11: #1f1f1f;
+  --primarry1: #52c41a;
+  --white-70: rgba(255, 255, 255, 0.7);
+  --white-50: rgba(255, 255, 255, 0.5);
+}
+
+body {
+  background: #fff;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ----------- font -------------- */
+.font_12 {
+  font-size: 12px;
+  line-height: 20px; /* 166.667% */
+}
+
+.font_14_neu11 {
+  color: var(--Neutral-11, #1f1f1f);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+}
+
+.font_number {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.font_16 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.font_16_500_primary {
+  color: var(--primarry-Vncm, #0e883d);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.font_16_400_primary {
+  color: var(--primarry-Vncm, #0e883d);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.font_16_500_neutral9 {
+  color: var(--Neutral-9, #434343);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.font_16_500_neutral11 {
+  color: var(--Neutral-11, #1f1f1f);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+
+.font_roboto_16 {
+  color: var(--character-primary-inverse, #fff);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.font_18 {
+  font-size: 18px;
+  line-height: 26px; /* 144.444% */
+}
+
+.font_18_500_ne11 {
+  color: var(--Neutral-11, #1f1f1f);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px; /* 144.444% */
+}
+
+.font_18_500_000 {
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px; /* 144.444% */
+}
+
+.font_20_neu9 {
+  color: var(--Neutral-9, #434343);
+  font-size: 20px;
+  line-height: 28px; /* 140% */
+}
+
+.font_20_500 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px; /* 140% */
+}
+
+.font_24 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.font_30_neu1 {
+  color: var(--Neutral-1, #fff);
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40px; /* 133.333% */
+}
+
+.font_38_500 {
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 46px; /* 121.053% */
+}
+
+.font_38_700 {
+  color: var(--primarry-Vncm, #0e883d);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46px; /* 121.053% */
+}
+
+.font_48_60_neu1 {
+  color: var(--Neutral-1, #fff);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px; /* 133.333% */
+}
+
+/* ---------- css màn ------------ */
+
+@media (max-width: 767px) {
+  .main-container {
+    padding: 0px 16px;
+  }
+
+  .header-fixed .menu,
+  .header-fixed .img_ten {
+    display: none;
+  }
+
+  .content-column5 {
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+
+  .ft-down {
+    align-items: flex-start;
+  }
+
+  .list-items-ft {
+    gap: 25px;
+  }
+
+  .bottom-fl-dw {
+    gap: 20px;
+  }
+
+  .footer-top {
+    align-items: center;
+  }
+
+  .logo-footer {
+    width: 310px;
+  }
+
+  .main-footer {
+    padding: 40px 0px 0px 0px;
+  }
+
+  /* ----rao bán hàng */
+
+  .column6-product,
+  .column6-top-feature,
+  .column8-tainguyen {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .hero-btn-rao1 {
+    display: flex;
+  }
+
+  .form-hero-bottom,
+  .img-banner-rao {
+    display: none;
+  }
+
+  .hero-heading-rao {
+    font-size: 38px;
+  }
+
+  .nd-column4-raoban .product-des-rao:last-child {
+    width: unset;
+  }
+
+  /* danh mục tài nguyên */
+  .nd-tainguyen-top {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .title-des-left,
+  .title-des-right {
+    width: 100%;
+  }
+
+  .form-bottom {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .nd-tainguyen-bottom-app .form-bottom .column1-form-hero-bottom,
+  .nd-tainguyen-bottom-app .form-bottom .hero-btn-rao {
+    width: 100%;
+  }
+
+  .font-app {
+    font-size: 18px;
+  }
+  .nd-tainguyen-bottom-app {
+    gap: 20px;
+  }
+
+  .nd-content-tainguyen {
+    padding-bottom: 40px;
+  }
+
+  .tainguyen-app-form {
+    margin-top: 0;
+  }
+  /* dmtn - chi tiết bài viết */
+
+  .page.mobile,
+  .dots.mobile,
+  .page-size-selector {
+    display: none;
+  }
+
+  .pagination-container {
+    justify-content: center;
+  }
+
+  /* trang chi tiết bào viết */
+
+  .img-top-right-title1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 28px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    column-gap: 30px;
+  }
+
+  .main-top-bv {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .column-bv-left,
+  .colum-bv-right,
+  .top-right-bv {
+    width: 100%;
+  }
+
+  .top-right-bottom-hot_new {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* danh sach doanh nghiệp bán */
+  .column4-dn-ban {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .danh_sach_doanh_nghiep_ban .form-hero-bottom .column2-form-hero-bottom {
+    display: none;
+  }
+
+  /* chi tiết doanh nghiệp  */
+
+  .brand-title {
+    flex-direction: column;
+    margin-top: -90px;
+  }
+
+  .title-name-des-dn {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .name-phone {
+    padding-top: 0;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .btn-brand {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .nd-bottom-ct {
+    margin-top: 40px;
+    flex-direction: column;
+  }
+
+  .chi_tiet_dn_ban .column6-product {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .chi_tiet_dn_ban .form-hero-bottom {
+    grid-template-columns: none;
+  }
+
+  .row1-dongvat-rate {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .name-brand {
+    text-align: center;
+  }
+
+  .chi_tiet_dn_ban .column6-top-feature {
+    flex-wrap: wrap;
+  }
+
+  .left-nd-dnct {
+    width: 100%;
+  }
+
+  .right-nd-dnct {
+    width: 100%;
+  }
+
+  .left-top-tk {
+    flex-wrap: wrap;
+  }
+
+  .chi_tiet_dn_ban .nd-contact-right3 {
+    justify-content: space-between;
+  }
+
+  .phone-employ {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .img-logo-cty1 {
+    width: 10%;
+  }
+
+  .chi_tiet_dn_ban .btn-brand {
+    flex-wrap: wrap;
+  }
+
+  .img-hoa {
+    height: 200px;
+    width: 100%;
+  }
+
+  .row-bottom-simles,.bottom-simle-bl {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main-container {
+    padding: 0px 25px 0px 25px;
+  }
+
+  .header-fixed .menu {
+    display: none;
+  }
+
+  .content-column5 {
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+
+  .main-footer {
+    padding: 60px 0px 0px 0px;
+  }
+
+  /* ----rao bán hàng */
+
+  .column6-product,
+  .column6-top-feature,
+  .column8-tainguyen {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .list_rao_don .hero-list-rao .form-hero-bottom .column2-form-hero-bottom,
+  .danh_sach_tai_nguyen .column2-form-hero-bottom {
+    display: none;
+  }
+
+  .list_rao_don .hero-list-rao .form-hero-bottom,
+  .danh_sach_tai_nguyen .form-hero-bottom,
+  .dstn_chi_tiet_dm .form-hero-bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero-btn-rao1 {
+    display: none;
+  }
+
+  /* danh mục tài nguyên */
+  .nd-tainguyen-top {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .title-des-left,
+  .title-des-right {
+    width: 100%;
+  }
+
+  .dstn_chi_tiet_dm
+    .hero-content-rao
+    .form-hero-bottom
+    .column2-form-hero-bottom {
+    display: none;
+  }
+
+  /* trang chi tiết bào viết */
+
+  .img-top-right-title1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 28px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    column-gap: 30px;
+  }
+
+  .main-top-bv {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .column-bv-left,
+  .colum-bv-right,
+  .top-right-bv {
+    width: 100%;
+  }
+
+  .top-right-bottom-hot_new {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* danh sach doanh nghiệp bán */
+  .column4-dn-ban {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .danh_sach_doanh_nghiep_ban .form-hero-bottom .column2-form-hero-bottom {
+    display: none;
+  }
+
+  .danh_sach_doanh_nghiep_ban .form-hero-bottom {
+    display: flex;
+  }
+
+  /* chi tiết doanh nghiệp  */
+
+  .brand-title {
+    flex-direction: column;
+    margin-top: -90px;
+  }
+
+  .title-name-des-dn {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .name-phone {
+    padding-top: 0;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .btn-brand {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .nd-bottom-ct {
+    margin-top: 40px;
+  }
+
+  .chi_tiet_dn_ban .column6-top-feature {
+    flex-wrap: wrap;
+  }
+
+  .viewer {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-logo-cty1 {
+    width: 80%;
+  }
+
+  .left-nd-dnct-top-tk,
+  .left-nd-dnct-top-tk1,
+  .left-nd-dnct-top-tk2 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .left-top-tk {
+    flex-wrap: wrap;
+  }
+  .chi_tiet_dn_ban .column6-product {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .chi_tiet_dn_ban .form-hero-bottom {
+    grid-template-columns: none;
+  }
+
+  .row1-dongvat-rate {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .name-brand {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .main-container {
+    max-width: 92%;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .menu-header {
+    display: none;
+  }
+
+  .main-footer {
+    padding: 60px 0px 0px 0px;
+  }
+
+  /* ----rao bán hàng */
+
+  .column6-product,
+  .column6-top-feature,
+  .column8-tainguyen {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-btn-rao1 {
+    display: none;
+  }
+
+  /* danh sach doanh nghiệp bán */
+  .column4-dn-ban {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .danh_sach_doanh_nghiep_ban .form-hero-bottom .column2-form-hero-bottom {
+    display: none;
+  }
+
+  .danh_sach_doanh_nghiep_ban .form-hero-bottom {
+    display: flex;
+  }
+  .font-rate {
+    font-size: 10px;
+  }
+  .rate-sart {
+    gap: 0px;
+  }
+
+  /* chi tiết doanh nghiệp  */
+
+  .brand-title {
+    flex-direction: column;
+    margin-top: -90px;
+  }
+
+  .title-name-des-dn {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .name-phone {
+    padding-top: 0;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .btn-brand {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .nd-bottom-ct {
+    margin-top: 40px;
+  }
+
+  .viewer {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-nd-dnct-top-tk,
+  .left-nd-dnct-top-tk1,
+  .left-nd-dnct-top-tk2 {
+    flex-direction: column;
+  }
+
+  .chi_tiet_dn_ban .column6-product {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .chi_tiet_dn_ban .form-hero-bottom {
+    grid-template-columns: none;
+  }
+
+  .row1-dongvat-rate {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .menu-header {
+    display: none;
+  }
+
+  /* list rao bán hàng */
+
+  .hero-btn-rao1 {
+    display: none;
+  }
+}
