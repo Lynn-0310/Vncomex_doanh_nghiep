@@ -1,0 +1,415 @@
+.bang_gia_peoducer {
+  background: #fafafa;
+  padding-top: 125px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.font_find {
+  color: var(--primarry-Vncm, #0e883d);
+}
+
+.font_pr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4px;
+}
+
+.bodius {
+  border-bottom: 4px solid var(--primarry-Vncm, #0e883d); /* Viền 1px, màu xanh */
+  width: max-content;
+}
+
+.title-produce {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  border-bottom: 1px solid var(--Neutral-4, #f0f0f0);
+}
+
+.title-des-top-bang-gia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 30px;
+}
+
+.title-find {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 63%;
+  text-align: center;
+}
+
+/* ------------------ */
+
+table {
+  width: 100%;
+  table-layout: fixed; /* Bắt buộc để phân chia theo % */
+  text-align: left;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+th:first-child {
+  width: 30%;
+}
+
+th:nth-child(2),
+td:nth-child(2),
+th:nth-child(3),
+td:nth-child(3),
+th:nth-child(4),
+td:nth-child(4),
+th:nth-child(5),
+td:nth-child(5) {
+  width: 17%;
+}
+
+.pricing-table {
+  margin-top: -20px;
+  border-radius: 8.691px;
+  background: #fff;
+
+  /* drop-shadow/0.15 */
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.title,
+.title1,
+.title2,
+.title3,
+.title4 {
+  border-radius: 2.173px 2.173px 32.591px 32.591px;
+  background: #3d4a81;
+  max-width: 432px;
+  height: 88px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Canh giữa ngang */
+  align-items: center; /* Canh giữa dọc */
+  width: 92%;
+  margin-top: -10px;
+}
+
+.cell {
+  padding: 12px 10px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+  color: var(--Neutral-9, #434343);
+  font-size: 18px;
+  line-height: 26px; /* 144.444% */
+}
+
+.sub-title {
+  display: flex;
+  max-width: 472px;
+  padding: 12px 24px;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid var(--Neutral-4, #f0f0f0);
+  color: var(--Neutral-11, #1f1f1f);
+  flex-wrap: wrap;
+}
+
+.heading {
+  border-radius: 8.691px;
+  background: #fff;
+
+  /* drop-shadow/0.15 */
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.btn-wrap {
+  text-align: center;
+  padding: 12px 10px 16px 10px;
+}
+
+.sub-title1 {
+  display: flex;
+  max-width: 472px;
+  padding: 12px 24px;
+  align-items: center;
+  gap: 10px;
+  color: var(--Neutral-11, #1f1f1f);
+  flex-wrap: wrap;
+}
+
+.cell1 {
+  padding: 12px 10px;
+  text-align: center;
+  color: var(--Neutral-9, #434343);
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn.blue,
+.title1 {
+  background: #508ab2;
+}
+.btn.green,
+.title2 {
+  background: #71b578;
+}
+.btn.orange,
+.title3 {
+  background: #f59138;
+}
+.btn.red,
+.title4 {
+  background: #ef553c;
+}
+
+.standard {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8.691px;
+  border: 1px solid var(--primarry-Vncm, #0e883d);
+  background: #fff;
+  box-shadow: 0px 2px 8px 0px rgba(14, 136, 61, 0.5);
+}
+
+/* -------------- */
+.img-if-suitable {
+  display: flex;
+  padding: 40px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  border-radius: 8px;
+  background-image: url("/assets/image/chi_tiet_rao.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: lightgray;
+
+  /* drop-shadow/0.15 */
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.font_if {
+  color: var(--Neutral-1, #fff);
+  text-align: center;
+  width: 75%;
+}
+
+.btn_if {
+  font-weight: 500;
+  color: var(--Neutral-1, #fff);
+  display: flex;
+  padding: 9px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: var(--primarry1, #52c41a);
+}
+
+/* ---------------- */
+.choose-factory {
+  display: flex;
+  padding: 40px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  border: 1px solid #f0f0f0;
+  background: #fff;
+  box-shadow: 0px 4px 23px 0px rgba(0, 0, 0, 0.07);
+  margin-bottom: 40px;
+}
+
+.meun-choose {
+  width: 100%;
+}
+
+.meun-choose .slg ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  padding-bottom: 40px;
+}
+
+.slg-item {
+  display: flex;
+  padding-left: 80px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-left: 1px solid #52c41a;
+}
+
+.meun-choose .slg ul::after {
+  bottom: 0px;
+  right: 50%;
+  transform: translateX(50%);
+  content: "";
+  position: absolute;
+  width: 880px;
+  height: 1px;
+  border-bottom: 1px dashed #52c41a;
+}
+
+.choose-item {
+  display: flex;
+  align-items: start;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.title-choose {
+  color: #1f1f1f;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 46px;
+  padding-bottom: 40px;
+}
+
+.color-text {
+  color: var(--primarry-Vncm, #0e883d);
+}
+.choose-name {
+  color: var(--primarry-Vncm, #0e883d);
+  font-family: Inter;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 46px;
+}
+
+.choose-des {
+  color: var(--Neutral-9, #434343);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.choose-name1 {
+  color: var(--Neutral-11, #1f1f1f);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.choose-list ul {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  padding: 0px 40px;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+/* -------- bang gia buyer ------- */
+
+.why-vncomex {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.bottom-buyer,
+.top-buyer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.features-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.feature-box {
+  background: linear-gradient(90deg, #f3fff7 0%, white 100%);
+  border: 1px solid #22a732;
+  padding: 20px;
+  border-radius: 0;
+  max-width: 467px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  font-size: 14px;
+  position: relative;
+}
+
+.feature-box1 {
+  background: linear-gradient(90deg, #f3fff7 0%, white 100%);
+  border: 1px solid #22a732;
+  padding: 20px;
+  border-radius: 0;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  font-size: 14px;
+  position: relative;
+}
+
+.feature-box p {
+  margin: 0;
+  color: #555;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Custom corner cuts */
+.top-left {
+  clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 0 100%);
+}
+.top-right {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%, 0 90%);
+}
+.bottom-left {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 100%, 0 90%);
+}
+.bottom-right {
+  clip-path: polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%);
+}
+
+.center-box {
+  grid-column: 2 / 3;
+  background: white;
+  border: 1px solid #22a732;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 140px;
+  background: linear-gradient(90deg, #f3fff7 0%, white 100%);
+}
+
+.center-box > div {
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.big-number {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: #22a732;
+  margin-bottom: 4px;
+}

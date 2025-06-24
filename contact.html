@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang liên hệ</title>
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+    <main class="contact">
+      <div class="main-container">
+        <div class="register-container">
+          <div class="form-left">
+            <p class="font_res font_38_500">Form to send contact information</p>
+
+            <div class="row1-dk-ncc">
+              <div class="form-group">
+                <label class="font-email"
+                  >Full name <span class="required">*</span></label
+                >
+
+                <div class="input-icon1">
+                  <img
+                    src="assets/image/icons/frame1.svg"
+                    alt="ic-people"
+                    class="ic-people"
+                  />
+                  <input type="text1" placeholder="Nguyễn Văn A" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="font-email"
+                  >Email <span class="required">*</span></label
+                >
+                <div class="input-icon1">
+                  <img
+                    src="assets/image/icons/sms.svg"
+                    alt="ic-people"
+                    class="ic-people"
+                  />
+                  <input type="text1" placeholder="abdc@example.com" />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="font-email"
+                >Phone number <span class="required">*</span></label
+              >
+
+              <div class="input-icon1">
+                <img
+                  src="assets/image/icons/call.svg"
+                  alt="ic-people"
+                  class="ic-people"
+                />
+                <input type="text1" placeholder="xxxx xxx xxx" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="font-email"
+                >Your role <span class="required">*</span></label
+              >
+              <div class="radio-group">
+                <label
+                  ><input type="radio" name="role" checked /> Producer</label
+                >
+                <label><input type="radio" name="role" /> Buyer</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="font-email"
+                >Company Name <span class="required">*</span></label
+              >
+
+              <div class="input-icon1">
+                <img
+                  src="assets/image/icons/frame1.svg"
+                  alt="ic-people"
+                  class="ic-people"
+                />
+                <input type="text1" placeholder="Enter your producer name" />
+              </div>
+            </div>
+
+            <div class="form-group">
+                <label class="font-email">Content needs support</label>
+                <textarea
+                  maxlength="100"
+                  oninput="updateCounter(this)"
+                  class="textarea-support"
+                  placeholder="A design system for enterprise-level products. Create an efficient and enjoyable work experience."
+                ></textarea>
+                <div class="char-count">
+                  <span id="count">0</span> / 100
+                </div>
+              </div>
+              
+
+            <form class="register-form">
+              <div class="check-des">
+                <div class="form-group-checkbox checkbox">
+                  <input type="checkbox" id="agree" />
+                  <p>I'm not a robot</p>
+                </div>
+
+                <p>
+                  By clicking "Submit", I agree to
+                  <span class="font_se"
+                    >Vncomex's Terms of Service & Privacy Policy
+                  </span>
+                </p>
+              </div>
+
+              <button class="btn-submit" disabled>Submit</button>
+            </form>
+          </div>
+
+          <div class="main-content-form-right">
+            <div class="form-right-des-glob">
+              <p class="font_48_60_neu1">
+                Global trade data connection platform
+              </p>
+              <p class="font_acc_des_dk font_16">
+                Access an online B2B ecosystem with a network of 35,000+ leading
+                suppliers and trading businesses worldwide.
+              </p>
+            </div>
+
+            <button class="btn-start font_16_400_primary">Start now</button>
+          </div>
+        </div>
+      </div>
+      <div class="form-right"></div>
+    </main>
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

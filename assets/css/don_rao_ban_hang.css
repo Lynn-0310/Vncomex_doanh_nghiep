@@ -80,7 +80,7 @@
 .img-hero_thanh,
 .img-rao1,
 .logo-rao,
-.icon-dys{
+.icon-dys {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -143,7 +143,6 @@
   align-self: stretch;
   width: 100%;
 }
-
 
 .font_sale {
   color: var(--primarry-Vncm, #0e883d);
@@ -249,6 +248,7 @@
   flex-direction: column;
   gap: 20px;
   width: 100%;
+  margin-top: 20px;
 }
 
 .rao-ban-between {
@@ -268,6 +268,11 @@
 .name-list-product {
   font-weight: 500;
   color: var(--primarry-Vncm, #0e883d);
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .title-attra {
@@ -324,7 +329,7 @@
   color: var(--Neutral-1, #fff);
 }
 
-.title-goc-rao  {
+.title-goc-rao {
   display: inline-flex;
   padding: 4px 10px;
   justify-content: center;
@@ -335,9 +340,9 @@
   width: 40%;
 }
 
-.the-out{
-    display:flex;
-    justify-content: flex-end;
+.the-out {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .img-outstanding {
@@ -357,11 +362,526 @@
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
 }
 
-.banner-bottom-rao, .img-banner-bottom{
-    width: 100%;
+.banner-bottom-rao,
+.img-banner-bottom {
+  width: 100%;
 }
 
-.banner-bottom-rao{
-    margin-bottom: 40px;
+.banner-bottom-rao {
+  margin-bottom: 40px;
 }
 
+/* ------------- CHI TIẾT ĐƠN RAO BÁN - ĐƠN MUA HÀNG --------------- */
+
+.ct_don_rao_ban_hang {
+  background: #fafafa;
+  padding-bottom: 40px;
+}
+
+/* ----------thanh chuyển trang------------ */
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.arrow {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid var(--Neutral-5, #d9d9d9);
+  background: var(--Neutral-1, #fff);
+}
+
+.page {
+  display: flex;
+  padding: 5px 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  border: 1px solid var(--Neutral-5, #d9d9d9);
+  background: var(--Neutral-1, #fff);
+  transition: background 0.2s ease;
+}
+
+.dots {
+  border: none;
+  cursor: default;
+  color: #999;
+}
+
+.page.active {
+  border: 1px solid var(--primarry, #3b6834);
+  background: var(--Neutral-1, #fff);
+  color: var(--primarry-key, #3b6834);
+}
+
+.page-size-selector select {
+  display: flex;
+  padding: 6px 12px;
+  align-items: flex-start;
+  border-radius: 4px;
+  border: 1px solid var(--Neutral-5, #d9d9d9);
+  background: var(--Neutral-1, #fff);
+}
+
+/* ---------------------------------- */
+
+.font_res {
+  color: var(--character-secondary-45, rgba(0, 0, 0, 0.45));
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.font_art1 {
+  color: var(--Neutral-11, #1f1f1f);
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.title-top-bv-res {
+  display: flex;
+  align-items: center;
+}
+
+.font_res1 {
+  color: var(--character-secondary-45, rgba(0, 0, 0, 0.45));
+  display: flex;
+  padding: 0px 8px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.column-bv-left {
+  margin-top: 79px;
+}
+
+/* ---------- */
+
+.nd-cty-masan-top1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.logo-title-cty1 {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1 0 0;
+  padding-top: 20px;
+}
+
+.img-logo-cty1 {
+  max-width: 42px;
+}
+
+.ic-logocty1 {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.font-namedn {
+  color: var(--black-80-base, #2e3032);
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rating-sat1 {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+  align-self: stretch;
+}
+
+.rate-sart {
+  display: flex;
+}
+
+.nd-right-contact-maybe1 {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.font-glob {
+  color: var(--Neutral-9, #434343);
+}
+
+.globale {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.see-detail {
+  display: flex;
+  padding: 6px 20px;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+}
+
+.des-left-bottom-col4 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.content-left-bottom-ct {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 20px;
+}
+
+.font-sales {
+  color: var(--primarry-Vncm, #0e883d);
+  font-weight: 500;
+}
+
+.send {
+  width: 126px;
+  display: flex;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--primarry-Vncm, #0e883d);
+  flex: 1; /* chia đều không gian */
+}
+
+.btn-brand {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.content-left-top-ct {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+  border-bottom: 1px solid var(--Neutral-4, #f0f0f0);
+}
+
+.nd-content-left-don_rao {
+  display: flex;
+  padding-bottom: 20px;
+  flex-direction: column;
+  border-radius: 8px;
+  background: #fff;
+
+  /* drop-shadow/0.15 */
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
+
+  width: 33%;
+  height: max-content;
+}
+
+.font_dongvat {
+  color: var(--primarry-Vncm, #0e883d);
+}
+
+.font_des-ho {
+  color: var(--Neutral-11, #1f1f1f);
+}
+
+/* ----------- */
+.img-raoban-ct {
+  width: 100%;
+  height: 100%;
+}
+
+.img_ct_raoban {
+  border-radius: 8px;
+  overflow: hidden;
+  height: 474px;
+  width: 100%;
+}
+
+.nd-content-right-don_rao {
+  display: flex;
+  padding: 20px 20px 0px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  border-radius: 8px 8px 0px 0px;
+  background: #fff;
+}
+
+.nd_ct_don_rao_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.matxem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tk-matxem1 {
+  display: flex;
+  padding: 20px 0px;
+  align-items: center;
+  gap: 32px;
+  border-top: 1px solid var(--Neutral-4, #f0f0f0);
+  border-bottom: 1px solid var(--Neutral-4, #f0f0f0);
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* ------ */
+
+.read-more-toggle {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+  user-select: none;
+}
+
+.arrow-icon {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+.read-more-toggle.rotate .arrow-icon {
+  transform: rotate(180deg);
+}
+
+/* -------postcard---- */
+
+.post-card {
+  display: flex;
+  padding: 16px 20px 12px 20px;
+  flex-direction: column;
+  gap: 12px;
+  border-bottom: 1px solid var(--Neutral-3, #f5f5f5);
+  background: #fff;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.user-info .time-posted {
+  font-size: 14px;
+  color: #777;
+  margin: 2px 0 0 0;
+}
+
+.post-content {
+  color: var(--Neutral-9, #434343);
+  padding-right: 20px;
+}
+
+.post-actions {
+  display: flex;
+  gap: 16px;
+  border-top: 1px solid #eee;
+  padding-top: 12px;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+}
+
+.content-right-don_rao {
+  display: flex;
+  padding: 0px 20px 0px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 8px 8px 0px 0px;
+  width: 64%;
+}
+
+.nd-content-right-bottom-dr {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+/* ----------- */
+
+.post-container {
+  background: #fff;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar.small {
+  width: 32px;
+  height: 32px;
+}
+
+.user-info {
+  flex-grow: 1;
+  margin-left: 12px;
+}
+
+.name {
+  font-weight: 600;
+  margin: 0;
+}
+
+.time {
+  font-size: 14px;
+  color: #888;
+  margin: 2px 0 0;
+}
+
+.menu-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.post-actions {
+  display: flex;
+  gap: 20px;
+  border-top: 1px solid #eee;
+  padding-top: 8px;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #444;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+}
+
+.icon.small {
+  width: 14px;
+  height: 14px;
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 12px;
+  margin-left: 64px;
+}
+
+.comment-box {
+  border-radius: 6px;
+  margin-left: 12px;
+}
+
+.comment-content {
+  margin: 0;
+  font-size: 14px;
+}
+
+.comment-actions {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #888;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.more-comment {
+  color: var(--Neutral-7, #8c8c8c);
+  font-weight: 500;
+  margin-left: 64px;
+  margin-top: 12px;
+}
+
+.input-comment {
+  display: flex;
+  align-items: flex-start;
+  padding: 16px 20px 16px 64px;
+}
+
+.font_text {
+  color: var(--Neutral-7, #8c8c8c);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid var(--Neutral-4, #f0f0f0);
+  width: 100%;
+  padding-left: 10px;
+}
+
+.username {
+  font-weight: 500;
+  color: var(--Neutral-11, #1f1f1f);
+}
+
+.ct_don_rao_ban_hang .main-content-between {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

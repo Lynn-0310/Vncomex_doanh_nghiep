@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang thông báo đăng ký thành công</title>
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/alert.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+    <main class="dk-alert">
+      <div class="main-container">
+        <div class="alert-container">
+          <p class="font_res font_24">Authenticate your email</p>
+          <div class="img-thongbao">
+            <img
+              src="assets/image/Mail sent-amico 1.png"
+              alt=" thông báo"
+              class="thongbao"
+            />
+          </div>
+
+          <div class="alert-des-btn">
+            <div class="alert-des">
+              <p class="font_the font_16_500_neutral9">
+                The account verification email has been sent to
+                <span class="font_16_500_neutral11">youremail@example.com.</span>
+               <br> Please check your inbox, including Promotions, Spam and Updates.
+              </p>
+              <p class="font_16">
+                You can also request a resend of the verification email.
+              </p>
+            </div>
+  
+            <button class="btn-send send-to">Send to</button>
+          </div>
+          
+        </div>
+      </div>
+    </main>
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
