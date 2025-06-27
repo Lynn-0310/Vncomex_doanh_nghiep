@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/base.css" />
   </head>
   <body>
+    <div id="header-placeholder"></div>
     <main class="about_vncomex">
       <div class="hero-section">
         <div class="main-container">
@@ -292,8 +293,37 @@
             </div>
           </div>
           
+          <div class="partner-section">
+            <p class="section-label font_20_500">Partner</p>
+            <div class="partner-grid">
+              <div class="partner-item"><img src="assets/image/tan_cuong.png" alt="Partner 1" /></div>
+              <div class="partner-item"><img src="assets/image/logtics.jpg" alt="Partner 2" /></div>
+              <div class="partner-item"><img src="assets/image/tan_cuong.png" alt="Partner 1" /></div>
+              <div class="partner-item"><img src="assets/image/logtics.jpg" alt="Partner 2" /></div>
+              <div class="partner-item"><img src="assets/image/tan_cuong.png" alt="Partner 1" /></div>
+              <div class="partner-item"><img src="assets/image/logtics.jpg" alt="Partner 2" /></div>
+              <div class="partner-item"><img src="assets/image/tan_cuong.png" alt="Partner 1" /></div>
+              <div class="partner-item"><img src="assets/image/logtics.jpg" alt="Partner 2" /></div>
+            </div>
+          </div>
+          
         </div>
       </div>
     </main>
+    <div id="footer-placeholder"></div>
+
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
   </body>
 </html>

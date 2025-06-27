@@ -127,7 +127,7 @@ a {
 }
 
 .font_20_fff {
-  color: #FFF;
+  color: #fff;
   font-size: 20px;
   line-height: 28px; /* 140% */
 }
@@ -156,7 +156,6 @@ a {
   font-size: 24px;
   line-height: 32px;
 }
-
 
 .font_30_danger {
   color: var(--Character-danger, #ff4d4f);
@@ -218,6 +217,30 @@ a {
   .header-fixed .menu,
   .header-fixed .img_ten {
     display: none;
+  }
+
+  .btn_apply,
+  .btn_hire {
+    display: none;
+  }
+
+  .ic-chuong {
+    display: block;
+  }
+
+  .logo_header {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .header-left {
+    flex: 1;
+  }
+
+  .header-logo {
+    height: 100px;
+    width: 100%;
+    text-align: center;
   }
 
   .content-column5 {
@@ -603,8 +626,40 @@ a {
     flex-direction: column-reverse;
     gap: 90px;
     margin-bottom: 40px;
-}
+  }
+  /* ----about -comex----- */
 
+  .about_vncomex .slg {
+    margin-top: 30px;
+  }
+
+  .feature-item {
+    flex-direction: column;
+  }
+  .feature-item.reverse {
+    flex-direction: column;
+  }
+
+  .hero-nav {
+    padding: 0;
+  }
+
+  .benefit-cards {
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .factory-des-top {
+    text-align: center;
+  }
+  .about_vncomex .choose-factory {
+    text-align: center;
+  }
+
+  .hero-content_about {
+    width: 100%;
+    padding: 30px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -612,8 +667,34 @@ a {
     padding: 0px 25px 0px 25px;
   }
 
-  .header-fixed .menu {
+  .header-fixed .menu,
+  .btn_apply,
+  .btn_hire {
     display: none;
+  }
+
+  .btn_apply,
+  .btn_hire {
+    display: none;
+  }
+
+  .logo_header {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .header-left {
+    flex: 1;
+  }
+
+  .header-logo {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .ic-chuong {
+    display: block;
   }
 
   .content-column5 {
@@ -842,6 +923,10 @@ a {
   .login .main-content-form-right {
     padding: 240px 0px 0 60px;
   }
+
+  .hero-content_about {
+    padding: 20px;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
@@ -1000,6 +1085,10 @@ a {
 
   .login .main-content-form-right {
     padding: 240px 0px 0 60px;
+  }
+
+  .hero-content_about {
+    padding: 20px;
   }
 }
 
