@@ -1,0 +1,287 @@
+.baner {
+  height: 600px;
+  background-image: url("/assets/image/map_home.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 74px;
+}
+.content-bottom input,
+.content-bottom select {
+  color: #8c8c8c;
+}
+.search-wrapper .search-filter-group {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.similar-planting-areas {
+  margin-top: 20px;
+  width: 100%;
+}
+.similar-planting-areas .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-wrapper .search-bar {
+  width: 100%;
+  height: 35px;
+  border-radius: 8px;
+  border: 1px solid #f0f0f0;
+  background-color: #f5f5f5;
+  padding-left: 30px;
+  font-size: 12px;
+}
+.search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1); /* bóng đều 4 phía */
+  justify-content: space-between;
+}
+
+.search-icon {
+  position: absolute;
+  left: 30px;
+  color: #8c8c8c;
+  pointer-events: none; /* không cản trở thao tác input */
+}
+
+.search-wrapper .search-btn,
+.search-wrapper .location {
+  width: 22%;
+  height: 35px;
+  border-radius: 8px;
+  border: 1px solid #f0f0f0;
+  background-color: #ffffff;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+.search-wrapper .search-btn {
+  width: 30%;
+  color: #ffffff;
+  background: #0e8839;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.similar-planting-areas .title {
+  font-size: 18px;
+}
+
+.search-wrapper .search-input-wrapper {
+  width: 31%;
+  display: flex;
+  align-items: center;
+}
+.similar-planting-areas .content {
+  width: 100%;
+  margin-bottom: 35px;
+}
+.similar-planting-areas .content-main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.similar-planting-areas .content-main .item {
+  width: 24%;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.1),
+    /* bên trái */ 4px 4px 8px rgba(0, 0, 0, 0.1); /* bên phải + dưới */
+}
+.similar-planting-areas .content-main .item-img {
+  width: 100%;
+  height: 200px;
+  background-image: url("/assets/image/map_home.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.similar-planting-areas .content-main .title {
+  border: 0;
+  color: var(--primarry-Vncm, #0e883d);
+  font-weight: 500;
+  line-height: 26px; /* 144.444% */
+}
+.similar-planting-areas .item-content {
+  padding: 5px 10px;
+}
+.similar-planting-areas .content-main .item p {
+  color: var(--Neutral-9, #434343);
+  padding-bottom: 30px;
+  border-bottom: #f0f0f0 1px solid;
+}
+.similar-planting-areas .content-main .item .item-content-img {
+  width: 100%;
+  height: 98px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.similar-planting-areas .content-main .item .img {
+  width: 31%;
+  height: 100%;
+  background-image: url("/assets/image/map_home.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.similar-planting-areas .content-main .post-stats {
+  background: #0e883d;
+  color: white;
+  width: 40%;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 8px;
+  display: flex;
+  gap: 25px;
+  font-size: 12px;
+  padding-left: 10px;
+  max-height: 35px;
+}
+.similar-planting-areas .content-main .post-stats .like-stat,
+.similar-planting-areas .content-main .post-stats .view-stat {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 0;
+}
+.similar-planting-areas .content-main .bookmark-flag {
+  position: relative;
+  width: 40px;
+  height: 60px;
+  background-color: #0e883d;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 10px), 0 100%);
+}
+.similar-planting-areas .content-main .bookmark-flag svg {
+  margin-bottom: 10px;
+}
+.similar-planting-areas .content-main .company {
+  display: flex;
+  align-items: start;
+  gap: 7px;
+  padding-bottom: 10px;
+  border-bottom: #f0f0f0 1px solid;
+}
+.similar-planting-areas .content-main .company-icon {
+  width: 40px;
+  height: 40px;
+  background-image: url("/assets/image/icon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.similar-planting-areas .content-main .company-content .company-name {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.similar-planting-areas .content-main .company-content .company-address {
+  font-size: 12px;
+  color: #8c8c8c;
+}
+.similar-planting-areas .content-main .company-content .company-address svg {
+  background: white;
+}
+.similar-planting-areas .content-main .listing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.similar-planting-areas .content-main .listing .listing-count {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #0e8839;
+}
+.similar-planting-areas .content-main .listing .listing-count p {
+  padding: 0;
+}
+.similar-planting-areas .content-main .listing .sms-tracking {
+  background-color: white;
+  border: none; /* hoặc border: 1px solid #eee; */
+  border-radius: 999px; /* tùy chọn: bo góc */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 👈 đổ bóng mượt */
+  padding: 5px 6px; /* nên có padding để nội dung thoáng */
+  display: flex;
+  align-items: center;
+}
+
+/* ----------thanh chuyển trang------------ */
+
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  width: 100%;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.arrow {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid var(--Neutral-5, #d9d9d9);
+  background: var(--Neutral-1, #fff);
+}
+
+.page {
+  display: flex;
+  padding: 5px 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  border: 1px solid var(--Neutral-5, #d9d9d9);
+  background: var(--Neutral-1, #fff);
+  transition: background 0.2s ease;
+}
+
+.dots {
+  border: none;
+  cursor: default;
+  color: #999;
+}
+
+.page.active {
+  border: 1px solid var(--primarry, #3b6834);
+  background: var(--Neutral-1, #fff);
+  color: var(--primarry-key, #3b6834);
+}
+
+.page-size-selector select {
+  display: flex;
+  padding: 6px 12px;
+  align-items: flex-start;
+  border-radius: 4px;
+  border: 1px solid var(--Neutral-5, #d9d9d9);
+  background: var(--Neutral-1, #fff);
+}

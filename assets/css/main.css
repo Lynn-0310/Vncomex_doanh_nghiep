@@ -1,0 +1,647 @@
+.banner {
+  width: 100%;
+  height: 556px;
+  margin-bottom: 30px;
+}
+
+.banner .top-banner {
+  width: 100%;
+  height: 500px;
+  background-image: url("/assets/image/banner_home.jpg"); /* nếu file HTML ở thư mục con */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+}
+.top-banner .banner-content {
+  width: 75%;
+  height: 456px;
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.banner-content .content-left {
+  width: 54.5%;
+}
+.banner-content .content-left .content-top {
+  color: #ffffff;
+}
+.banner-content .banner-title {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+.banner-content .banner-subtitle {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.banner-content .text-left {
+  color: #50c21e;
+}
+
+.banner-content .content-left .content-title {
+  display: flex;
+  justify-content: start;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.banner-content .content-left .content-bottom-wrapper {
+  width: 100%;
+  height: 80px;
+  border-radius: 4px;
+  border: 10px solid rgba(255, 255, 255, 0.3);
+}
+.banner-content .content-left .content-bottom {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.content-bottom input,
+.content-bottom select {
+  color: #8c8c8c;
+}
+.latest-product .content {
+  display: flex;
+  justify-content: space-between;
+}
+.banner-content .content-left .search-bar,
+.latest-product .search-wrapper .search-bar,
+.best-supplier .search-wrapper .search-bar {
+  width: 100%;
+  height: 35px;
+  border-radius: 8px;
+  border: 1px solid #f0f0f0;
+  background-color: #f5f5f5;
+  padding-left: 30px;
+  font-size: 12px;
+}
+.banner-content .content-left .search-input-wrapper,
+.latest-product .search-wrapper,
+.best-supplier .search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  color: #8c8c8c;
+  pointer-events: none; /* không cản trở thao tác input */
+}
+.banner-content .content-left .city,
+.banner-content .content-left .producer,
+.banner-content .content-left .search-btn,
+.latest-product .search-wrapper .search-btn,
+.latest-product .search-wrapper .location,
+.best-supplier .search-wrapper .search-btn,
+.best-supplier .search-wrapper .location {
+  width: 19%;
+  height: 35px;
+  border-radius: 8px;
+  border: 1px solid #f0f0f0;
+  background-color: #ffffff;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+.banner-content .content-left .search-btn,
+.latest-product .search-wrapper .search-btn,
+.best-supplier .search-wrapper .search-btn {
+  color: #ffffff;
+  background: #0e8839;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.banner-content .content-right {
+  width: 43%;
+  height: 424px;
+  background-image: url("/assets/image//banner-chart.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  border-radius: 10px;
+}
+
+.banner .bottom-banner {
+  width: 100%;
+  height: 56px;
+  background-color: #0e883d;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  align-items: center;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  color: #ffffff;
+
+  /* Ẩn thanh cuộn */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE, Edge cũ */
+}
+
+.bottom-banner .flex-line {
+  display: flex;
+  flex-wrap: nowrap; /* Cho phép xuống hàng nếu quá dài */
+  gap: 12px; /* Khoảng cách giữa các khối */
+  align-items: flex-start;
+}
+
+.bottom-banner .item {
+  display: inline-block;
+  white-space: nowrap; /* ✅ Không cho dòng tự xuống trong từng item */
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.latest-product .title,
+.best-supplier .title,
+.featured-products .title,
+.producer .title {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #0f873d;
+  border-bottom: 2px solid #0f873d;
+}
+
+.latest-product .search-wrapper,
+.best-supplier .search-wrapper {
+  margin-top: 15px;
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+}
+.latest-product .search-wrapper .search-btn,
+.best-supplier .search-wrapper .search-btn {
+  width: 10%;
+}
+.latest-product .search-wrapper .location,
+.best-supplier .search-wrapper .location {
+  width: 10%;
+}
+
+.latest-product .search-wrapper .search-input-wrapper,
+.best-supplier .search-wrapper .search-input-wrapper {
+  width: 31%;
+  display: flex;
+  align-items: center;
+}
+.latest-product .search-wrapper .search-bar,
+.best-supplier .search-wrapper .search-bar {
+  width: 100%;
+}
+.latest-product .content,
+.best-supplier .content,
+.featured-products .content {
+  width: 100%;
+  margin-bottom: 35px;
+}
+.latest-product .content-left,
+.best-supplier .content .main-content,
+.featured-products .content .main-content,
+.producer .content {
+  width: 74.5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.latest-product .content-left .item {
+  width: 32%;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.1),
+    /* bên trái */ 4px 4px 8px rgba(0, 0, 0, 0.1); /* bên phải + dưới */
+}
+.latest-product .content-left .item-img {
+  width: 100%;
+  height: 200px;
+  background-image: url("/assets/image/map_home.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.latest-product .content-left .title {
+  border: 0;
+  font-size: 13px;
+}
+.latest-product .item-content,
+.best-supplier .item {
+  padding: 5px 10px;
+}
+.latest-product .content-left .item p {
+  font-size: 12px;
+  padding-bottom: 30px;
+  border-bottom: #f0f0f0 1px solid;
+}
+.latest-product .content-left .item .item-content-img {
+  width: 100%;
+  height: 98px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.latest-product .content-left .item .img {
+  width: 31%;
+  height: 100%;
+  background-image: url("/assets/image/map_home.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.latest-product .content-left .post-stats {
+  background: #0e883d;
+  color: white;
+  width: 40%;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 8px;
+  display: flex;
+  gap: 25px;
+  font-size: 12px;
+  padding-left: 10px;
+  max-height: 35px;
+}
+.latest-product .content-left .post-stats .like-stat,
+.latest-product .content-left .post-stats .view-stat {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 0;
+}
+.latest-product .content-left .bookmark-flag {
+  position: relative;
+  width: 40px;
+  height: 60px;
+  background-color: #0e883d;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% calc(100% - 10px), 0 100%);
+}
+.latest-product .content-left .bookmark-flag svg {
+  margin-bottom: 10px;
+}
+.latest-product .content-left .company,
+.best-supplier .content .company-summary {
+  display: flex;
+  align-items: start;
+  gap: 7px;
+  padding-bottom: 10px;
+  border-bottom: #f0f0f0 1px solid;
+}
+.latest-product .content-left .company-icon {
+  width: 40px;
+  height: 40px;
+  background-image: url("/assets/image/icon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.latest-product .content-left .company-content .company-name {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.latest-product .content-left .company-content .company-address {
+  font-size: 12px;
+  color: #8c8c8c;
+}
+.latest-product .content-left .company-content .company-address svg {
+  background: white;
+}
+.latest-product .content-left .listing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.latest-product .content-left .listing .listing-count {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #0e8839;
+}
+.latest-product .content-left .listing .listing-count p {
+  padding: 0;
+}
+.latest-product .content-left .listing .sms-tracking {
+  background-color: white;
+  border: none; /* hoặc border: 1px solid #eee; */
+  border-radius: 999px; /* tùy chọn: bo góc */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 👈 đổ bóng mượt */
+  padding: 5px 6px; /* nên có padding để nội dung thoáng */
+  display: flex;
+  align-items: center;
+}
+
+.latest-product .content-right {
+  width: 24%;
+}
+.latest-product .content-right .item {
+  width: 100%;
+  height: 314px;
+  background-image: url("/assets/image/statistical.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 20px;
+}
+.best-supplier .content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.best-supplier .content .item,
+.featured-products .content .item {
+  width: 24%;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.1),
+    /* bên trái */ 4px 4px 8px rgba(0, 0, 0, 0.1); /* bên phải + dưới */
+}
+.best-supplier .content .company-icon {
+  width: 53px;
+  height: 40px;
+  background-image: url("/assets/image/icon-best.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 100%;
+}
+.best-supplier .content .item .rating {
+  display: flex;
+  gap: 5px;
+  font-size: 12px;
+  color: #8c8c8c;
+}
+.best-supplier .content .item .company-description {
+  display: flex;
+  justify-content: space-between;
+  color: #8c8c8c;
+}
+.best-supplier .content .item .company-description svg {
+  color: #0e883d;
+}
+.best-supplier .content .main-content {
+  width: 100%;
+}
+.best-supplier .content .left-arrow,
+.best-supplier .content .right-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background-color: #f5ebeb;
+}
+.best-supplier .content .left-arrow {
+  margin-left: -50px;
+}
+.best-supplier .content .right-arrow {
+  margin-right: -50px;
+}
+.featured-products .content .main-content {
+  width: 100%;
+}
+.featured-products .item {
+  padding: 20px;
+}
+.featured-products .item .product-name,
+.featured-products .item .planting-areas {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  display: block;
+  text-align: center;
+}
+.featured-products .item .product-name {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.featured-products .item .planting-areas {
+  font-size: 14px;
+  color: #0e883d;
+}
+
+.producer .producer-card {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.producer .content {
+  width: 100%;
+}
+.producer .item {
+  position: relative;
+  border-radius: 8px;
+  padding: 16px;
+  background: white;
+  overflow: hidden;
+  height: 200px;
+  width: 32%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.producer .item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: #52c41a;
+  z-index: 1;
+  pointer-events: none;
+}
+.producer .item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+  width: 100%;
+  background: linear-gradient(to bottom, #52c41a 0%, transparent 100%) left,
+    linear-gradient(to bottom, #52c41a 0%, transparent 100%) right;
+  background-repeat: no-repeat;
+  background-size: 1px 100%;
+  z-index: 1;
+  pointer-events: none;
+
+  /* ✅ Thêm dòng này để bo theo cha */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  overflow: hidden;
+}
+
+.producer .item .seller-promotion-card {
+  width: 59.5%;
+}
+.producer .item .img-producer {
+  width: 40.5%;
+}
+.promotion-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.promotion-description {
+  font-size: 14px;
+  color: #434343;
+}
+
+.producer .cta-promo {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.producer .cta-promo .cta-message {
+  font-size: 13px;
+  font-weight: 400;
+  color: #0e883d;
+  margin-bottom: 10px;
+}
+.producer .cta-promo .cta-button {
+  padding: 10px 40px;
+  font-weight: 400;
+  color: white;
+  background-color: #0e883d;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 8px;
+}
+
+.export-market {
+  width: 100%;
+  background-image: url("/assets/image/banner_home.jpg");
+  border-radius: 8px;
+}
+.export-market .export-market-summary {
+  padding: 20px;
+}
+
+.export-market .export-market-summary .export-market-date {
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+}
+.export-market .export-market-summary .export-market-date span {
+  color: #4ebb3c;
+}
+
+.export-market .content {
+  margin: 20px 0;
+  padding: 0 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.export-market .content-left {
+  width: 24.5%;
+}
+
+.export-market .content-left .computer-img {
+  background-image: url("/assets/image/computer.png");
+}
+
+.export-market .item {
+  position: relative;
+  border-radius: 8px;
+  padding: 16px;
+  overflow: hidden;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.export-market .item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(7, 119, 37, 0.6),
+    /* màu phủ ban đầu - có thể là #52c41a nếu bạn muốn */
+      rgba(255, 255, 255, 0)
+  );
+  z-index: 1;
+  pointer-events: none;
+
+  border-radius: 8px; /* bao trọn luôn 4 góc nếu muốn */
+}
+.export-market .item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: #0c843d;
+  z-index: 1;
+  pointer-events: none;
+}
+.export-market .content-right {
+  width: 68%;
+}
+
+.export-market .content-right .content-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.export-market .content-right .content-top .item {
+  width: 32%;
+}
+.export-market .content-right .content-top .item .item-content {
+  position: relative;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.export-market .content-right .content-top .item img {
+  width: 44px;
+  height: 44px;
+  border-radius: 4px;
+}
+.export-market .content-right .content-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.export-market .content-right .content-bottom img {
+  border-radius: 8px;
+}

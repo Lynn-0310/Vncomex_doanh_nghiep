@@ -1,0 +1,370 @@
+.about_vncomex {
+  background-color: #fff;
+}
+
+.hero-section {
+  position: relative;
+  background: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0) 39.88%,
+      rgba(0, 0, 0, 0.3) 56.77%
+    ),
+    url("/assets/image/about_img.jpg") no-repeat center center;
+  background-size: cover;
+  height: 950px;
+  color: white;
+  padding: 158px 0px 385px 0;
+}
+
+.hero-nav {
+  position: absolute;
+  top: 0;
+  display: flex;
+  padding: 8px 240px 8px 172px;
+  align-items: center;
+  gap: 121px;
+  border-bottom: 1px solid var(--Neutral-5, #d9d9d9);
+  width: 100%;
+}
+
+.hero-nav ul {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-nav a.active {
+  color: var(--Polar-Green-4, #95de64);
+  font-weight: 500;
+}
+
+.hero-content_about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
+  width: 44%;
+}
+
+.font_about {
+  color: #fff;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 86px; /* 119.444% */
+  letter-spacing: -1.44px;
+}
+
+.highlight {
+  color: var(--primarry1, #52c41a);
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 86px;
+  letter-spacing: -1.44px;
+}
+
+.font_glo {
+  line-height: 70.5px; /* 146.875% */
+}
+
+.hero-about-des {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.font_li {
+  color: #fff;
+}
+
+/* -------------------------------------- */
+
+.feature-section {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-top: 100px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.feature-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.feature-image {
+  position: relative;
+  flex: 1;
+  padding: 8px;
+}
+
+.feature-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #ddd;
+  z-index: 15; /* càng lớn dưngd trước*/
+  position: relative;
+}
+
+.feature-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.font_abou-top {
+  color: var(--primarry-Vncm, #0e883d);
+}
+
+.img-left1 {
+  border: 1.575px solid var(--primarry1, #52c41a);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 35px;
+  left: -47px;
+}
+
+.left {
+  right: -45px;
+}
+
+/* --------------- */
+
+.benefit-section {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.factory-des-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-label {
+  color: var(--primarry-Vncm, #0e883d);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.benefit-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.benefit-card {
+  flex: 1;
+  border-radius: 8px;
+  padding: 20px;
+  color: white;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card-blue {
+  background: #3d4a81;
+}
+
+.card-green {
+  background: #a4bf43;
+}
+
+.card-cyan {
+  background: #23afd6;
+}
+
+.icon-money {
+  width: 100%;
+  height: 100%;
+  padding: 16.667px;
+  border-radius: 6.667px;
+  background: var(--Polar-Green-1, #f6ffed);
+}
+
+.ic-money {
+  width: 80px;
+  height: 80px;
+}
+
+.font_there {
+  color: var(--Neutral-1, #fff);
+  font-weight: 700;
+}
+
+.font_there1 {
+  color: var(--Neutral-2, #fafafa);
+}
+
+/* ------------------- */
+.choose-factory {
+  display: flex;
+  padding: 40px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  border: 1px solid #f0f0f0;
+  background: #fff;
+  box-shadow: 0px 4px 23px 0px rgba(0, 0, 0, 0.07);
+}
+
+.color-text {
+  color: var(--primarry-Vncm, #0e883d);
+}
+
+.meun-choose {
+  width: 100%;
+}
+
+.meun-choose .slg ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  padding-bottom: 40px;
+}
+
+.slg-item {
+  display: flex;
+  padding-left: 80px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-left: 1px solid #52c41a;
+}
+
+.meun-choose .slg ul::after {
+  bottom: 0px;
+  right: 50%;
+  transform: translateX(50%);
+  content: "";
+  position: absolute;
+  width: 880px;
+  height: 1px;
+  border-bottom: 1px dashed #52c41a;
+}
+
+.choose-factory .choose-list ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 0px 40px;
+  justify-content: space-between;
+  padding-top: 40px;
+  gap: 20px;
+}
+
+.choose-item {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.choose-info {
+  text-align: left;
+}
+
+.choose-name {
+  color: var(--primarry-Vncm, #0e883d);
+}
+
+/* ------------------------ */
+
+.font_search {
+  color: var(--Neutral-11, #1f1f1f);
+}
+
+.section-label {
+  color: #00b140;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.color-text {
+  color: #00b140;
+}
+
+/* --- Lưới trên & dưới --- */
+.benefit-grid-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.benefit-grid-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+/* --- Box viền gradient góc cắt chéo --- */
+.benefit-box {
+  flex: 1 1 45%;
+  background: linear-gradient(
+    270deg,
+    #fff -0.03%,
+    rgba(216, 255, 203, 0) 75.09%
+  );
+  border: 1px solid #52c41a;
+  padding: 43px 58px;
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 0 100%);
+  box-sizing: border-box;
+  max-width: 406px;
+}
+
+/* Box bên phải dùng ngược clip-path */
+.benefit-box.border-left {
+  clip-path: polygon(0 20px, 20px 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* --- Box thống kê --- */
+.stat-box {
+  padding: 20px 20px 10px 20px;
+  border: 1px solid #52c41a;
+  grid-column: 2 / 3;
+  background: white;
+  border: 1px solid #22a732;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 140px;
+  background: linear-gradient(90deg, #f3fff7 0%, white 100%);
+}
+
+.stat {
+  text-align: left;
+}

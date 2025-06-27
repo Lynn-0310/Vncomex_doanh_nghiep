@@ -106,7 +106,7 @@ input[type="text1"] {
   padding: 40px 40px 80px 0px;
   gap: 20px;
   background: #fff;
-  margin-top: 130px;
+  margin-top: 30px;
 }
 
 .form-right {
@@ -122,6 +122,7 @@ input[type="text1"] {
   background-position: 90% center;
   background-repeat: no-repeat;
   z-index: 1; /* nằm dưới */
+  margin-top: 55px;
 }
 
 .form-section {
@@ -267,9 +268,52 @@ textarea {
   color: var(--Neutral-7, #8c8c8c);
 }
 
-
 .form-group input:focus {
   border-color: #0e883d;
   box-shadow: 0 0 0 2px rgba(14, 136, 61, 0.2);
   outline: none;
+}
+
+/* ---------------------- */
+.contact-nav {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--Neutral-5, #d9d9d9);
+  background: #fafafa;
+  font-size: 14px;
+  margin-top: 80px;
+  padding-left: 256px;
+}
+
+.contact-links {
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  gap: 12px;
+  align-items: center;
+  color: #999;
+  width: 85%;
+}
+
+.contact-links li a {
+  color: #999;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.contact-links li a:hover {
+  color: #0e883d;
+}
+
+.contact-links li a.active {
+  color: #0e883d;
+  font-weight: 500;
+}
+
+.contact-links .divider {
+  color: #ccc;
 }
