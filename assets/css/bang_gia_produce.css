@@ -20,7 +20,7 @@
   padding-bottom: 4px;
 }
 
-.bodius {
+.bang_gia_produce .bodius {
   border-bottom: 4px solid var(--primarry-Vncm, #0e883d); /* Viền 1px, màu xanh */
   width: max-content;
 }
@@ -98,6 +98,7 @@ td:nth-child(5) {
   align-items: center; /* Canh giữa dọc */
   width: 92%;
   margin-top: -10px;
+  text-align: center;
 }
 
 .cell {
@@ -412,4 +413,31 @@ td:nth-child(5) {
   font-weight: 700;
   color: #22a732;
   margin-bottom: 4px;
+}
+
+/* ----------- */
+
+.pricing-table {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* mượt mà cho iOS */
+}
+
+/* Nếu bạn muốn bảng không bị bẻ chữ */
+.pricing-table table {
+  min-width: 768px; /* hoặc bao nhiêu bạn cần */
+  border-collapse: collapse;
+}
+
+/* --------------- */
+.bang_gia_buyer .font_pr {
+  color: #000;
+}
+
+.font_pr1{
+  color: var(--primarry-Vncm, #0e883d);
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: 4px solid var(--primarry-Vncm, #0e883d); /* Viền 1px, màu xanh */
+    width: max-content;
 }

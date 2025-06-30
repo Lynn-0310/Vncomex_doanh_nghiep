@@ -238,7 +238,7 @@ a {
   }
 
   .header-logo {
-    height: 80px;
+    height: 72px;
     width: 100%;
     text-align: center;
   }
@@ -817,6 +817,15 @@ a {
   .featured-products {
     margin-top: 30px;
   }
+
+  /* ------------- */
+  .table-wrapper {
+    overflow-x: auto;
+  }
+
+  .title-des-top-bang-gia{
+    padding-top: 110px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -1176,6 +1185,15 @@ a {
   .best-supplier .content .right-arrow {
     display: none;
   }
+
+  /* ------------- */
+  .table-wrapper {
+    overflow-x: auto;
+  }
+
+  .title-des-top-bang-gia{
+    padding-top: 110px;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
@@ -1403,9 +1421,8 @@ a {
     display: none;
   }
 
-  /* ---------- */
-  .main-bv-content {
-    margin-top: 80px;
+  .title-des-top-bang-gia{
+    padding-top: 110px;
   }
 }
 
@@ -1429,10 +1446,5 @@ a {
   /* -----đăng nhập -------- */
   .login .register-container {
     gap: 170px;
-  }
-
-  /* ---------- */
-  .main-bv-content {
-    margin-top: 80px;
   }
 }
