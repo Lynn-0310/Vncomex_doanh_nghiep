@@ -1,0 +1,134 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* nền mờ */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* đảm bảo cao hơn tất cả */
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* lớp phủ nền */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: auto; /* Cho phép scroll nếu nội dung dài */
+  padding: 20px; /* để tránh dính sát lề khi cuộn */
+  box-sizing: border-box;
+}
+
+.modal-content {
+  position: fixed;
+  background: #fff;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh; /* Giới hạn chiều cao để hiển thị đẹp */
+  overflow-y: auto;  /* Cuộn nội dung khi vượt quá max-height */
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Title */
+.hello-title {
+  color: #0e883d;
+  margin-bottom: 10px;
+}
+
+/* Role selection container */
+.role-options {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* Each role box */
+.role-box {
+  position: relative;
+  width: 150px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Role image */
+.role-box img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Role button overlay */
+.role-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0e883d;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  z-index: 2;
+  transition: background-color 0.3s;
+  width: 80%;
+}
+
+.role-btn:hover {
+  background: var(--primarry1, #52c41a);
+}
+
+.font-pl {
+  color: var(--Neutral-9, #434343);
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.font_to {
+  color: var(--Neutral-11, #1f1f1f);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+
+.modal-des {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

@@ -823,8 +823,36 @@ a {
     overflow-x: auto;
   }
 
-  .title-des-top-bang-gia{
+  .title-des-top-bang-gia {
     padding-top: 110px;
+  }
+
+  /* chon dk */
+  .role-options {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .role-box {
+    width: 80%;
+  }
+
+  .modal-content {
+    padding: 30px 16px;
+  }
+
+  .role-options {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .role-box img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .role-btn {
+    width: 80%;
   }
 }
 
@@ -1191,7 +1219,7 @@ a {
     overflow-x: auto;
   }
 
-  .title-des-top-bang-gia{
+  .title-des-top-bang-gia {
     padding-top: 110px;
   }
 }
@@ -1421,7 +1449,7 @@ a {
     display: none;
   }
 
-  .title-des-top-bang-gia{
+  .title-des-top-bang-gia {
     padding-top: 110px;
   }
 }
