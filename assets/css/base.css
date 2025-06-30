@@ -284,11 +284,6 @@ a {
     display: flex;
   }
 
-  .form-hero-bottom,
-  .img-banner-rao {
-    display: none;
-  }
-
   .hero-heading-rao {
     font-size: 38px;
   }
@@ -333,6 +328,11 @@ a {
   .tainguyen-app-form {
     margin-top: 0;
   }
+
+  .content-bottom-wrapper {
+    display: none;
+  }
+
   /* dmtn - chi tiết bài viết */
 
   .page.mobile,
@@ -628,7 +628,19 @@ a {
     margin-bottom: 40px;
   }
   /* ----about -comex----- */
+  .feature-section {
+    gap: 20px;
+  }
 
+  .left {
+    right: 0;
+  }
+  .img-left1 {
+    display: none;
+  }
+  .hero-section {
+    margin-top: 100px;
+  }
   .about_vncomex .slg {
     margin-top: 30px;
   }
@@ -640,8 +652,13 @@ a {
     flex-direction: column;
   }
 
+  .hero-nav ul {
+    flex-wrap: wrap;
+  }
+
   .hero-nav {
-    padding: 0;
+    padding: 12px 0px 8px 0px;
+    flex-wrap: wrap;
   }
 
   .benefit-cards {
@@ -661,6 +678,135 @@ a {
     padding: 30px;
   }
 
+  .header-menu-content {
+    width: 70%;
+  }
+
+  /* -----------home---------------- */
+  .export-market .content {
+    flex-direction: column;
+  }
+
+  .export-market .content-left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .export-market .content-left .computer-img {
+    width: 50%;
+  }
+
+  .export-market .content-right {
+    width: 100%;
+  }
+
+  .export-market .content-right .content-top {
+    width: 100%;
+  }
+
+  .export-market .content-right .content-bottom {
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+
+  .export-market .content-right .content-bottom img {
+    width: 100%;
+  }
+
+  .latest-product .content {
+    flex-direction: column;
+  }
+
+  .latest-product .content-left,
+  .best-supplier .content .main-content,
+  .producer .content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .latest-product .content-right {
+    display: none;
+  }
+
+  .banner-content .content-left .content-bottom {
+    flex-wrap: wrap;
+    padding: 12px 5px;
+  }
+
+  .banner-content .content-left .content-bottom-wrapper {
+    height: auto;
+  }
+
+  .banner-content .banner-title {
+    line-height: 34px;
+  }
+
+  .best-supplier .content .left-arrow,
+  .best-supplier .content .right-arrow {
+    display: none;
+  }
+
+  .banner-content .content-left {
+    width: 100%;
+  }
+
+  .banner-content .content-right {
+    width: 100%;
+  }
+
+  .top-banner .banner-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .banner .top-banner {
+    margin-top: 100px;
+  }
+
+  .latest-product .content-left .item {
+    width: 100%;
+  }
+
+  .best-supplier .content .item,
+  .featured-products .content .item {
+    width: 100%;
+  }
+
+  .producer .item {
+    width: 100%;
+  }
+  .best-supplier .search-wrapper .location,
+  .best-supplier .search-wrapper .search-btn,
+  .latest-product .search-wrapper .location,
+  .latest-product .search-wrapper .search-btn {
+    width: 100%;
+  }
+
+  .latest-product .search-wrapper .search-input-wrapper,
+  .best-supplier .search-wrapper .search-input-wrapper {
+    width: 100%;
+  }
+
+  .banner-content .content-left .producer,
+  .banner-content .content-left .search-btn,
+  .banner-content .content-left .city {
+    width: 40%;
+  }
+
+  .search-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .search-wrapper .search-filter-group {
+    width: 100%;
+  }
+
+  .search-wrapper .search-input-wrapper {
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -929,6 +1075,98 @@ a {
     padding: 20px;
   }
 
+  /* -----------home---------------- */
+  .export-market .content {
+    flex-direction: column;
+  }
+
+  .export-market .content-left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .export-market .content-left .computer-img {
+    width: 50%;
+  }
+
+  .export-market .content-right {
+    width: 100%;
+  }
+
+  .export-market .content-right .content-top {
+    width: 100%;
+  }
+
+  .export-market .content-right .content-bottom {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .export-market .content-right .content-bottom img {
+    width: 50%;
+  }
+
+  .latest-product .content {
+    flex-direction: column;
+  }
+
+  .latest-product .content-left,
+  .best-supplier .content .main-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .latest-product .content-right {
+    display: none;
+  }
+
+  .banner-content .content-left .content-bottom {
+    flex-wrap: wrap;
+    padding: 12px 0;
+  }
+
+  .banner-content .content-left .content-bottom-wrapper {
+    height: auto;
+  }
+
+  .banner .top-banner {
+    margin-top: 100px;
+  }
+
+  .banner-content .banner-title {
+    line-height: 40px;
+  }
+
+  .banner-content .content-left .city,
+  .banner-content .content-left .producer,
+  .banner-content .content-left .search-btn,
+  .latest-product .search-wrapper .search-btn,
+  .latest-product .search-wrapper .location,
+  .best-supplier .search-wrapper .search-btn,
+  .best-supplier .search-wrapper .location {
+    width: 35%;
+  }
+  .best-supplier .content .item,
+  .featured-products .content .item {
+    width: 100%;
+  }
+  .latest-product .content-left .item {
+    width: 100%;
+  }
+
+  .latest-product .content-left .post-stats {
+    width: 62%;
+  }
+
+  .best-supplier .content .item:nth-child(n + 7) {
+    display: none;
+  }
+
+  .best-supplier .content .left-arrow,
+  .best-supplier .content .right-arrow {
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
@@ -1091,6 +1329,69 @@ a {
 
   .hero-content_about {
     padding: 20px;
+  }
+
+  /* -----------home---------------- */
+  .export-market .content {
+    flex-direction: column;
+  }
+
+  .export-market .content-left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .export-market .content-left .computer-img {
+    width: 50%;
+  }
+
+  .export-market .content-right {
+    width: 100%;
+  }
+
+  .export-market .content-right .content-top {
+    width: 100%;
+  }
+
+  .export-market .content-right .content-bottom {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .export-market .content-right .content-bottom img {
+    width: 50%;
+  }
+
+  .latest-product .content {
+    flex-direction: column;
+  }
+
+  .latest-product .content-left,
+  .best-supplier .content .main-content,
+  .featured-products .content .main-content,
+  .producer .content {
+    width: 100%;
+  }
+  .latest-product .content-right {
+    display: none;
+  }
+
+  .banner-content .content-left .content-bottom {
+    flex-wrap: wrap;
+    padding: 12px 0;
+  }
+
+  .banner-content .content-left .content-bottom-wrapper {
+    height: auto;
+  }
+
+  .banner-content .banner-title {
+    line-height: 34px;
+  }
+
+  .best-supplier .content .left-arrow,
+  .best-supplier .content .right-arrow {
+    display: none;
   }
 }
 
