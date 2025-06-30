@@ -14,7 +14,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 75px;
+  margin-top: 60px;
 }
 .top-banner .banner-content {
   width: 75%;
@@ -318,6 +318,7 @@
 .latest-product .content-left .company-content .company-name {
   font-size: 13px;
   text-transform: uppercase;
+  color: var(--Neutral-11, #1F1F1F);
 }
 .latest-product .content-left .company-content .company-address {
   font-size: 12px;
@@ -646,6 +647,10 @@
   border-radius: 8px;
 }
 
-select.location {
+select.location{
   color: var(--Neutral-7, #8c8c8c);
 }
+
+ span {
+  color: var(--Neutral-11, #1F1F1F);
+ }

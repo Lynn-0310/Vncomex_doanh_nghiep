@@ -6,7 +6,7 @@
     ),
     url(../image/hero.png) lightgray 0.33px -342.836px / 100% 256% no-repeat;
   transform: scaleX(-1);
-  margin-top: 75px;
+  margin-top: 60px;
 }
 
 .hero-list-rao .main-container {

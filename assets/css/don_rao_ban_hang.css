@@ -6,7 +6,7 @@
     ),
     url(../image/hero.png) lightgray 0.33px -342.836px / 100% 256% no-repeat;
   transform: scaleX(-1);
-  margin-top: 75px;
+  margin-top: 60px;
 }
 
 .hero-list-rao .main-container {
@@ -155,8 +155,8 @@
 }
 
 .img-group-share img {
-  height: 32px;
-  width: 32px;
+  height: 20px;
+  width: 20px;
 }
 
 .sale-time {
@@ -257,7 +257,7 @@
 }
 
 .rao-ban-between {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .main-content-between {
