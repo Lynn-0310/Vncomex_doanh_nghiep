@@ -282,6 +282,7 @@
   align-items: center;
   gap: 5px;
   padding: 5px 0;
+  color: white;
 }
 .latest-product .content-left .bookmark-flag {
   position: relative;
@@ -656,4 +657,8 @@ select.location {
 
 span {
   color: var(--Neutral-11, #1f1f1f);
+}
+
+.stat-number{
+  color:white;
 }
