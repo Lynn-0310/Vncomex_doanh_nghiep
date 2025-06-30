@@ -285,3 +285,7 @@
   border: 1px solid var(--Neutral-5, #d9d9d9);
   background: var(--Neutral-1, #fff);
 }
+
+.company-name {
+  color: var(--Neutral-11, #1f1f1f);
+}
