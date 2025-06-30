@@ -233,3 +233,70 @@
 .header-mobile{
   display: none;
 }
+
+/* ---------thẻ cấp 2----------- */
+
+/* Cho phép phần tử cha định vị submenu */
+.header-item {
+  position: relative;
+}
+
+/* Ẩn submenu ban đầu */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Hiện ngay dưới "Producer" */
+  left: 0;
+  background-color: #ffffff;
+  padding: 8px 0;
+  min-width: 180px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+/* Khi hover vào li cha thì hiển thị submenu */
+.header-item:hover .submenu {
+  display: block;
+}
+
+/* Style cho submenu item */
+.submenu li a {
+  display: block;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+
+
+/* -------- */
+
+.menu-items li {
+  position: relative;
+  list-style: none;
+}
+
+/* Gạch dưới khi hover */
+.menu-items li:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #0E883D;
+}
+
+/* Padding để tránh gạch sát chữ */
+.menu-items li a {
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+/* Optional: đổi màu chữ khi hover */
+.menu-items li:hover > a {
+  color: #0E883D;
+}
+
