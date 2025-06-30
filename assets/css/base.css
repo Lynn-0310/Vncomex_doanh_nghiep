@@ -689,11 +689,10 @@ a {
 
   .export-market .content-left {
     width: 100%;
-    text-align: center;
   }
 
   .export-market .content-left .computer-img {
-    width: 50%;
+    width: 100%;
   }
 
   .export-market .content-right {
@@ -806,6 +805,17 @@ a {
 
   .search-wrapper .search-input-wrapper {
     width: 100%;
+  }
+  .export-market .content {
+    padding: 0;
+    margin: 0;
+  }
+  .export-market .content-right .content-top .item {
+    width: 100%;
+  }
+
+  .featured-products {
+    margin-top: 30px;
   }
 }
 
@@ -1082,11 +1092,10 @@ a {
 
   .export-market .content-left {
     width: 100%;
-    text-align: center;
   }
 
   .export-market .content-left .computer-img {
-    width: 50%;
+    width: 100%;
   }
 
   .export-market .content-right {

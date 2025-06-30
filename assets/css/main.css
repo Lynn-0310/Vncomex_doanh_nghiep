@@ -318,7 +318,7 @@
 .latest-product .content-left .company-content .company-name {
   font-size: 13px;
   text-transform: uppercase;
-  color: var(--Neutral-11, #1F1F1F);
+  color: var(--Neutral-11, #1f1f1f);
 }
 .latest-product .content-left .company-content .company-address {
   font-size: 12px;
@@ -566,6 +566,7 @@
 
 .export-market .content-left {
   width: 24.5%;
+  z-index: 10;
 }
 
 .export-market .content-left .computer-img {
@@ -614,6 +615,7 @@
 }
 .export-market .content-right {
   width: 68%;
+  z-index: 10;
 }
 
 .export-market .content-right .content-top {
@@ -621,6 +623,7 @@
   display: flex;
   justify-content: space-between;
   color: white;
+  flex-wrap: wrap;
 }
 .export-market .content-right .content-top .item {
   width: 32%;
@@ -647,10 +650,10 @@
   border-radius: 8px;
 }
 
-select.location{
+select.location {
   color: var(--Neutral-7, #8c8c8c);
 }
 
- span {
-  color: var(--Neutral-11, #1F1F1F);
- }
+span {
+  color: var(--Neutral-11, #1f1f1f);
+}
