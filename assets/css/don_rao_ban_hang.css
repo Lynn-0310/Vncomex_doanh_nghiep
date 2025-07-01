@@ -971,3 +971,12 @@ select.producer,
 select.price {
   color: var(--Neutral-7, #8C8C8C);
 }
+
+
+input:focus{
+  outline: none;
+}
+
+.hero-nav{
+  display: none;
+}

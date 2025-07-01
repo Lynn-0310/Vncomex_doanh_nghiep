@@ -372,3 +372,7 @@
 select.location{
   color: var(--Neutral-7, #8C8C8C);
 }
+
+.hero-nav{
+  display: none;
+}

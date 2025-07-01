@@ -635,6 +635,10 @@ a {
   }
 
   /* ----contact------ */
+  .font_about,.highlight {
+
+    font-size: 54px;
+}
   .contact .form-right {
     width: 100%;
     height: 42%;
@@ -669,7 +673,9 @@ a {
 
   .feature-item {
     flex-direction: column;
+    gap: 30px;
   }
+  
   .feature-item.reverse {
     flex-direction: column;
   }

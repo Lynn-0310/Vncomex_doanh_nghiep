@@ -445,3 +445,7 @@ td:nth-child(5) {
     border-bottom: 4px solid var(--primarry-Vncm, #0e883d); /* Viền 1px, màu xanh */
     width: max-content;
 }
+
+.hero-nav{
+  display: none;
+}

@@ -26,25 +26,46 @@
 
             <div class="search-wrapper">
               <div class="search-input-wrapper">
-                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#0e883d" viewBox="0 0 16 16">
-                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.397h-.001l3.85 3.85a1 1 0 0 0 
+                <svg
+                  class="search-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  fill="#0e883d"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.397h-.001l3.85 3.85a1 1 0 0 0 
                                 1.415-1.415l-3.85-3.85zm-5.242.656a5 5 0 1 1 
-                                0-10 5 5 0 0 1 0 10z"></path>
+                                0-10 5 5 0 0 1 0 10z"
+                  ></path>
                 </svg>
-                <input type="text" class="search-bar" placeholder="What are you looking for?">
+                <input
+                  type="text"
+                  class="search-bar"
+                  placeholder="What are you looking for?"
+                />
               </div>
               <div class="search-filter-group">
                 <select class="location">
-                  <option value="" >Province/ City</option>
+                  <option value="">Province/ City</option>
                 </select>
                 <select class="location">
-                  <option value="" >Product</option>
+                  <option value="">Product</option>
                 </select>
                 <button class="search-btn">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.397h-.001l3.85 3.85a1 1 0 0 0 
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.397h-.001l3.85 3.85a1 1 0 0 0 
                                   1.415-1.415l-3.85-3.85zm-5.242.656a5 5 0 1 1 
-                                  0-10 5 5 0 0 1 0 10z"></path>
+                                  0-10 5 5 0 0 1 0 10z"
+                    ></path>
                   </svg>
                   <span>Search</span>
                 </button>
@@ -1467,6 +1488,10 @@
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("header-placeholder").innerHTML = data;
+
+          const script = document.createElement("script");
+          script.src = "assets/js/header.js";
+          document.body.appendChild(script);
         });
 
       fetch("footer.html")
@@ -1476,6 +1501,6 @@
         });
     </script>
 
-    <script src="assets/js/header.js"></script>
+    <!-- <script src="assets/js/header.js"></script> -->
   </body>
 </html>

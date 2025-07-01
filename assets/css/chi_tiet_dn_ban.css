@@ -1287,3 +1287,8 @@ select.location {
 .font-ngu {
   color: var(--Neutral-9, #434343);
 }
+
+
+.hero-nav{
+  display: none;
+}

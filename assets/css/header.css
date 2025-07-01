@@ -62,7 +62,6 @@
   gap: 16px;
 }
 
-
 .btn_hire {
   width: 120px;
   display: flex;
@@ -85,14 +84,9 @@
   background: var(--primarry-Vncm, #0e883d);
 }
 
-
-
 .name_btn1 {
   color: var(--Neutral-1, #fff);
 }
-
-
-
 
 /* --- login ở ngoài - none */
 
@@ -156,7 +150,7 @@
 }
 
 .header-menu-content {
-  width: 50%;       
+  width: 50%;
   height: 100vh;
   background-color: white;
   padding: 10px 16px;
@@ -206,9 +200,9 @@
   border-bottom: 1px solid #ddd;
 }
 
-.header-item:last-child a {
+/* .header-item:last-child a {
   border-bottom: none;
-}
+} */
 
 .btn_apply1 {
   display: flex;
@@ -237,15 +231,13 @@
   margin-top: 30px;
 }
 
-
-.header-mobile{
+.header-mobile {
   display: none;
 }
 
-.unsucce-login1 a{
+.unsucce-login1 a {
   width: 50%;
 }
-
 
 /* ---------thẻ cấp 2----------- */
 
@@ -282,13 +274,10 @@
   white-space: nowrap;
 }
 
-
-
 /* -------- */
 
 .menu-items li {
   position: relative;
-  list-style: none;
 }
 
 /* Gạch dưới khi hover */
@@ -299,7 +288,7 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #0E883D;
+  background-color: #0e883d;
 }
 
 /* Padding để tránh gạch sát chữ */
@@ -310,6 +299,50 @@
 
 /* Optional: đổi màu chữ khi hover */
 .menu-items li:hover > a {
-  color: #0E883D;
+  color: #0e883d;
 }
 
+/* ---------------------- */
+.hero-nav a.active {
+  color: var(--Polar-Green-4, #95de64);
+  font-weight: 500;
+}
+
+.font_li {
+  color: #fff;
+}
+
+.header-item {
+  position: relative;
+}
+
+/* Ẩn mặc định */
+.hero-nav {
+  position: absolute;
+  top: 215%;
+  left: -614px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s; /* delay ẩn visibility */
+
+  background: transparent;
+  display: flex;
+  gap: 24px;
+  padding: 6px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 20;
+}
+.header-item:hover .hero-nav,
+.hero-nav:hover {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease;
+}
+
+/* ----------------- */
+.active-page {
+  color: #0e883d !important;
+
+  font-weight: 600;
+  border-bottom: 2px solid #0e883d;
+}

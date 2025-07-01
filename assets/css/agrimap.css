@@ -4,7 +4,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin-top: 74px;
+  margin-top: 60px;
 }
 .content-bottom input,
 .content-bottom select {
@@ -288,4 +288,8 @@
 
 .company-name {
   color: var(--Neutral-11, #1f1f1f);
+}
+
+.hero-nav{
+  display: none;
 }

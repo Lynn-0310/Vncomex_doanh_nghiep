@@ -1298,6 +1298,10 @@
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("header-placeholder").innerHTML = data;
+
+          const script = document.createElement("script");
+          script.src = "assets/js/header.js";
+          document.body.appendChild(script);
         });
 
       fetch("footer.html")
@@ -1306,6 +1310,6 @@
           document.getElementById("footer-placeholder").innerHTML = data;
         });
     </script>
-     <script src="assets/js/header.js"></script>
+     <!-- <script src="assets/js/header.js"></script> -->
   </body>
 </html>

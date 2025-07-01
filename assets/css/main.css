@@ -664,3 +664,7 @@ span {
 .stat-number{
   color:white;
 }
+
+.hero-nav{
+  display: none;
+}

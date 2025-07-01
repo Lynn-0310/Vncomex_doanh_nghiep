@@ -14,15 +14,6 @@
     <main class="about_vncomex">
       <div class="hero-section">
         <div class="main-container">
-          <nav class="hero-nav">
-            <ul>
-              <li><a href="#" class="active font_16">About Vncomex</a></li>
-              <li><a href="#" class="font_li font_16">Partner</a></li>
-              <li><a href="#" class="font_li font_16">Recruitment</a></li>
-              <li><a href="contact.html" class="font_li font_16">Contact</a></li>
-            </ul>
-          </nav>
-
           <div class="hero-content_about">
             <p class="font_about">
               About <span class="highlight">Vncomex</span>
@@ -375,6 +366,10 @@
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("header-placeholder").innerHTML = data;
+
+          const script = document.createElement("script");
+          script.src = "assets/js/header.js";
+          document.body.appendChild(script);
         });
 
       fetch("footer.html")
@@ -384,6 +379,6 @@
         });
     </script>
 
-    <script src="assets/js/header.js"></script>
+    <!-- <script src="assets/js/header.js"></script> -->
   </body>
 </html>

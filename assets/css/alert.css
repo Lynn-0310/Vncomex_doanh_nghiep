@@ -58,3 +58,6 @@
     object-fit: fill;
 }
 
+.hero-nav{
+  display: none;
+}

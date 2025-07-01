@@ -215,3 +215,7 @@
   align-items: flex-start;
   gap: 20px;
 }
+
+.hero-nav{
+  display: none;
+}
