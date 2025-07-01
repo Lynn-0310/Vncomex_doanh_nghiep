@@ -62,7 +62,9 @@
   gap: 16px;
 }
 
+
 .btn_hire {
+  width: 120px;
   display: flex;
   padding: 8px 20px;
   justify-content: center;
@@ -73,6 +75,7 @@
 }
 
 .btn_apply {
+  width: 120px;
   display: flex;
   padding: 8px 20px;
   justify-content: center;
@@ -82,9 +85,14 @@
   background: var(--primarry-Vncm, #0e883d);
 }
 
+
+
 .name_btn1 {
   color: var(--Neutral-1, #fff);
 }
+
+
+
 
 /* --- login ở ngoài - none */
 
@@ -233,6 +241,11 @@
 .header-mobile{
   display: none;
 }
+
+.unsucce-login1 a{
+  width: 50%;
+}
+
 
 /* ---------thẻ cấp 2----------- */
 
