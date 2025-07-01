@@ -882,6 +882,16 @@ a {
   .role-btn {
     width: 80%;
   }
+
+  /* ---------- */
+  .header-mobile.active {
+    display: block;
+  }
+
+  .post-card{
+    padding: 10px 15px 8px 15px;
+  }
+  
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
