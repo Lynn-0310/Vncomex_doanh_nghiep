@@ -509,6 +509,23 @@ a {
   .ct_don_rao_ban_hang .img-logo-cty1 {
     width: 100%;
   }
+
+  .nd-content-right-don_rao {
+    padding: 10px 10px 0px 10px;
+  }
+
+  .img_ct_raoban {
+    height: auto;
+  }
+
+  .img-raoban-ct {
+    border-radius: 8px;
+  }
+
+  .comment {
+    margin-left: 45px;
+  }
+
   /* ----------bảng giá producer------ */
   .choose-factory {
     gap: 0px;
@@ -579,8 +596,13 @@ a {
     height: 35%;
   }
 
-  .font_res {
+  .font_res,.font_art1 {
     text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 
   .btn-start {
